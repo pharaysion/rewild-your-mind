@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rewild Your Mind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Rewild Your Mind</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#randomizer">Randomizer</a></li>
+      <li><a href="#content-list">Content List</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <div id="random-content-display">Your random content will appear here.</div>
+    <button onclick="displayRandomContent()">Show Random Content</button>
+    <select id="categoryFilter" onchange="applyCategoryFilter()">
+        <option value="">All Categories</option>
+        <option value="Category1">Category 1</option>
+        <option value="Category2">Category 2</option>
+        <!-- Add more categories as needed -->
+    </select>
+    <div id="content-list"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2021 Rewild Your Mind. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+  
+</body>
+
+</html>
